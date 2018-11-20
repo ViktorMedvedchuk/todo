@@ -12,6 +12,7 @@ import { MaterialModule } from './modules/material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
+import { CoreModule } from './core/core.module';
 
 
 // for AOT
@@ -30,7 +31,7 @@ export function createTranslateLoader(http: HttpClient) {
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    // CoreModule,
+    CoreModule,
     // SharedModule,
     MaterialModule,
     AppRoutingModule,

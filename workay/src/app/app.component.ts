@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { I18nService } from './core/services/i18n.service';
 
 @Component({
   selector: 'app-root',
@@ -10,9 +10,8 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent {
   param = {value: 'world'};
 
-  constructor(translate: TranslateService) {
-    translate.setDefaultLang('ukr');
+  constructor(translate: I18nService) {
+    translate.language = '';
 
-    translate.use('ukr');
   }
 }
