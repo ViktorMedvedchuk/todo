@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { AppShellRoutingModule } from './app-shell-routing.module';
 import { AppShellComponent } from './app-shell.component';
 
+
 @NgModule({
   declarations: [
     AppShellComponent
@@ -11,6 +12,7 @@ import { AppShellComponent } from './app-shell.component';
   imports: [
     CommonModule,
     AppShellRoutingModule
+
   ],
   exports: [
     AppShellComponent

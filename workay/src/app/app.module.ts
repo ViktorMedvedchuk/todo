@@ -17,6 +17,7 @@ import { HomeComponent } from './components/home/home.component';
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
 import { AppShellModule } from './app-shell/app-shell.module';
 import { AppShellComponent } from './app-shell/app-shell.component';
+import { PageNotFoundComponent } from './components/PageNotFound/page-not-found.component';
 
 
 
@@ -30,7 +31,8 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [
     AppComponent,
     HomeComponent,
-    HowItWorksComponent
+    HowItWorksComponent,
+    PageNotFoundComponent
 
   ],
   imports: [
