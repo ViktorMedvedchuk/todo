@@ -14,6 +14,9 @@ import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
 import { CoreModule } from './core/core.module';
 import { HomeComponent } from './components/home/home.component';
+import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
+import { AppShellModule } from './app-shell/app-shell.module';
+import { AppShellComponent } from './app-shell/app-shell.component';
 
 
 
@@ -27,15 +30,17 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [
     AppComponent,
     HomeComponent,
+    HowItWorksComponent
+
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    AppShellModule,
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
     CoreModule,
-    // SharedModule,
     MaterialModule,
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
@@ -47,6 +52,7 @@ export function createTranslateLoader(http: HttpClient) {
       }
     })
   ],
+  exports: [AppShellComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
