@@ -1,19 +1,18 @@
 <div class="home-wrapper">
   <div class="home-wrapper-header">
     <div class="home-wrapper-header-input">
-      <div class="header-title">Замовляйте послуги і насолоджуйтесь життям</div>
+      <h1 class="header-title">Сервіс замовлення послуг</h1>
+      <p class="header-title">Підберемо спеціаліста біля Вашого будинку</p>
       <div class="header-input">
         <mat-form-field appearance="outline">
           <mat-label>Що потрібно зробити?</mat-label>
-          <input matInput>
-          <mat-hint>Наприклад прибрати в квартирі</mat-hint>
+          <input matInput type="text" autocomplete="off">
+          <mat-hint class="input-hint-wrapper">Наприклад:<span class="input-hint">прибрати в квартирі</span></mat-hint>
         </mat-form-field>
       </div>
       <div class="home-wrapper-submit">
         <a mat-raised-button routerLink=".">Замовити послугу</a>
       </div>
     </div>
-
   </div>
-
 </div>

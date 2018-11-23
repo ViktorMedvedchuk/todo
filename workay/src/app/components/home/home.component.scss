@@ -1,8 +1,11 @@
 @import '../../../theme/variables.scss';
 
 .home-wrapper {
+  width: 100%;
+  height: 400px;
   margin-top: 56px;
-  color: #fafafa;
+  background-color: $main-background;
+  color: #ffff;
 
   .home-wrapper-header {
     display: flex;
@@ -10,12 +13,11 @@
     justify-content: center;
     background-position: center;
     background-repeat: no-repeat;
-    height: 312px;
+    max-width: 100%;
+    height: 100%;
     background-size: cover;
-    background: black;
-    //background-image: url(../../../assets/clean.jpg);
-
-
+    //background: linear-gradient(160deg,#02b3e4,#02ccba);
+    background-image: url(../../../assets/clean.jpg);
     // @media (max-width: 400px) {
     //   background-image: url(../../../assets/clean.jpg);
     // }
@@ -23,38 +25,58 @@
     //   background-image: url(../../../assets/clean.jpg);
     // }
     .home-wrapper-header-input {
-      border: 1px solid red;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 300px;
-      height: 300px;
+      height: 100%;
     }
 
     .header-title {
-      font-size: 20px;
-      font-weight: 500;
       text-align: center;
+      text-shadow: 0 0 7px rgba(0,0,0,0.3);
     }
 
     .header-input {
+      width: 100%;
+      margin-top: 16px;
 
+      .input-hint-wrapper {
+        color: #ffff;
 
+        .input-hint {
+          font-weight: bold;
+          cursor: pointer;
+          text-decoration-line: underline;
+          text-decoration-style: dotted;
+        }
+
+        .input-hint:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    mat-form-field.mat-form-field {
+      font-size: 1em;
+      width: 100%;
     }
 
     .home-wrapper-submit {
       width: 100%;
-      height: 46px;
+      height: 55px;
+      margin-top: 16px;
 
       a {
         width: inherit;
         height: inherit;
-        background-color: #ff3d00;
+        background-color: $text-color;
         color: inherit;
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: 17px;
       }
 
     }
@@ -64,5 +86,6 @@
 
 
 }
+
 
 
