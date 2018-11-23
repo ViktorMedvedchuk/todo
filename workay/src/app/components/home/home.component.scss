@@ -1,0 +1,68 @@
+@import '../../../theme/variables.scss';
+
+.home-wrapper {
+  margin-top: 56px;
+  color: #fafafa;
+
+  .home-wrapper-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 312px;
+    background-size: cover;
+    background: black;
+    //background-image: url(../../../assets/clean.jpg);
+
+
+    // @media (max-width: 400px) {
+    //   background-image: url(../../../assets/clean.jpg);
+    // }
+    // @media (max-width: 500px) {
+    //   background-image: url(../../../assets/clean.jpg);
+    // }
+    .home-wrapper-header-input {
+      border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 300px;
+    }
+
+    .header-title {
+      font-size: 20px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .header-input {
+
+
+    }
+
+    .home-wrapper-submit {
+      width: 100%;
+      height: 46px;
+
+      a {
+        width: inherit;
+        height: inherit;
+        background-color: #ff3d00;
+        color: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+    }
+
+  }
+
+
+
+}
+
+

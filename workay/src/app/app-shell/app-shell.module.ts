@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { AppShellRoutingModule } from './app-shell-routing.module';
 import { AppShellComponent } from './app-shell.component';
+import { MaterialModule } from '../modules/material.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { AppShellComponent } from './app-shell.component';
   ],
   imports: [
     CommonModule,
-    AppShellRoutingModule
+    AppShellRoutingModule,
+    MaterialModule
 
   ],
   exports: [

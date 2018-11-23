@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-app-shell',
   templateUrl: './app-shell.component.html',
-  styleUrls: ['./app-shell.component.css']
+  styleUrls: ['./app-shell.component.scss']
 })
 export class AppShellComponent implements OnInit {
 
@@ -12,6 +12,14 @@ export class AppShellComponent implements OnInit {
 
   ngOnInit() {
     this.router.navigate(['/home']);
+  }
+
+  logoIconClick(): void {
+    this.router.navigate(['/home']);
+  }
+
+  userClick(): void {
+    this.router.navigate(['/login']);
   }
 
 }
