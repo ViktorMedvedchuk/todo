@@ -16,7 +16,7 @@
     max-width: 100%;
     height: 100%;
     background-size: cover;
-    //background: linear-gradient(160deg,#02b3e4,#02ccba);
+   // background: linear-gradient(160deg,#02b3e4,#02ccba);
     background-image: url(../../../assets/clean.jpg);
     // @media (max-width: 400px) {
     //   background-image: url(../../../assets/clean.jpg);
@@ -27,20 +27,27 @@
     .home-wrapper-header-input {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
       width: 300px;
       height: 100%;
     }
 
-    .header-title {
+    .header-title, .header-description {
+      margin-top: 40px;
+      font-weight: 600;
       text-align: center;
       text-shadow: 0 0 7px rgba(0,0,0,0.3);
+    }
+
+    .header-description {
+      margin-top: 0;
     }
 
     .header-input {
       width: 100%;
       margin-top: 16px;
+      background-color: rgba(0,0,0,.3)!important;
+      border-radius: 9px;
 
       .input-hint-wrapper {
         color: #ffff;
@@ -61,6 +68,7 @@
     mat-form-field.mat-form-field {
       font-size: 1em;
       width: 100%;
+      margin-top: -5px;
     }
 
     .home-wrapper-submit {
