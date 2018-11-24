@@ -8,7 +8,7 @@
         <mat-form-field appearance="outline">
           <mat-label>Що потрібно зробити?</mat-label>
           <input matInput type="search" autocomplete="off">
-          <mat-hint class="input-hint-wrapper">Наприклад:<span class="input-hint">прибрати в квартирі</span></mat-hint>
+          <mat-hint class="input-hint-wrapper">Наприклад: <span class="input-hint">прибрати в квартирі</span></mat-hint>
         </mat-form-field>
       </div>
       <div class="home-wrapper-submit">
@@ -30,9 +30,10 @@
     <div class="choose-worker">
         <h3>3.Перегляньте та оберіть</h3>
         <p>Виберіть професіонала який відповідає Вашим потребам</p>
+        <a routerLink="categories">Більш детально</a>
     </div>
     <div class="more-detailed">
-        <button mat-button>Більш детально</button>
+        <button mat-button class="more-detailed-button">Створити завдання</button>
     </div>
   </section>
 
@@ -49,11 +50,18 @@
   <section class="home-wrapper-tasks">
       <h2>Реєструйся як виконавець</h2>
       <p>Ви працьовитий виконавець? Ми допоможемо Вам отримати більше роботи</p>
-      <button mat-button>Почати заробляти гроші</button>
+      <button mat-button class="resister-worker-button">Почати заробляти гроші</button>
   </section>
 </main>
+<button mat-button>Наверх</button>
 <footer class="home-footer">
-    <img mat-button (click)="logoIconClick()" class="app-icon" width="35" height="35" src="../../assets/icons/worker-icon.svg" alt="worker">
-    p
+    <img mat-button class="app-icon" width="35" height="35" src="../../assets/icons/worker-icon.svg" alt="worker">Workay!
+    <p>change language</p>
+    <p>support</p>
+    <a href="mailto:workay-support@gmail.com">workay-support@gmail.com</a>
+    <p>Як це працює</p>
+    <p>Питання-відповіді</p>
+    <p>Оферта</p>
+    <p>© 2018 Workay</p>
 </footer>
 

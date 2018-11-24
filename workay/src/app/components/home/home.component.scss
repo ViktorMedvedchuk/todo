@@ -1,5 +1,7 @@
 @import '../../../theme/variables.scss';
 
+/*header*/
+
 .home-wrapper {
   width: 100%;
   height: auto;
@@ -88,12 +90,33 @@
       }
 
     }
+  }
+
+  .home-wrapper-howitworks {
 
   }
 
 
 
+
+  .resister-worker-button, .more-detailed-button {
+    background: $light-green;
+    color: white;
+  }
 }
 
+/*footer*/
+
+.home-footer {
+  max-width: 100%;
+  height: 300px;
+  //background: $disney-color;
+  color: white;
+  background: linear-gradient(160deg,$main-color,$disney-color);
+
+  .app-icon {
+    transform: rotateX(180deg);
+  }
+}
 
 
