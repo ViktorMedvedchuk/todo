@@ -1,15 +1,15 @@
 @import '../theme/variables.scss';
 
-.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+.header-input .mat-form-field-appearance-outline .mat-form-field-outline-thick {
   color:  #ffffff!important;
   opacity: 1!important;
 }
 
-.mat-form-field-label {
+.header-input .mat-form-field-label {
   color: #ffffff!important;
 }
 
-.mat-form-field-appearance-outline .mat-form-field-infix .mat-input-element {
+.header-input .mat-form-field-appearance-outline .mat-form-field-infix .mat-input-element {
   color: #ffffff!important;
   caret-color: #ffffff!important;
   text-align: center!important;
